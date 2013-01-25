@@ -237,7 +237,8 @@ color:#fff;
 #footer {
   clear: both;
 }
-.language-link {
+.language-link,
+.field-name-field-show-in-calendar {
   display: none;
 }
 .page-node-translate .language-link {

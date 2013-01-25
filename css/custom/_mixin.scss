@@ -1,0 +1,121 @@
+/*......................................................................... 
+    Project:   BaseTheme - BTFP
+    Version:   1.0
+    File:      layout.css
+    copyright: Since 2012 Opendream Co., Ltd.
+    By:        Chatchai Tutiyanond
+......................................................................... */
+
+
+/* Mixin
+---------------------------------------------------------*/
+@mixin accessibly-hidden {
+	position: absolute;
+	left: -999em;
+}
+@mixin has-layout-block {
+	display: inline-block;
+	& {
+		display: block;
+	}
+}
+@mixin pie-clearfix {
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+	@include has-layout-block;
+}
+@mixin text-shadow($h, $v, $blur, $color){
+	-webkit-text-shadow: $h $v $blur $color;
+	-moz-text-shadow:    $h $v $blur $color;
+	text-shadow:         $h $v $blur $color;
+}
+@mixin box-shadow($h, $v, $blur, $spread, $color){
+	-webkit-box-shadow: $h $v $blur $spread $color;
+	-moz-box-shadow:    $h $v $blur $spread $color;
+	box-shadow:         $h $v $blur $spread $color;
+}
+@mixin radius($topright, $topleft, $bottomright, $bottomleft){
+	-webkit-border-radius: $topright $topleft $bottomright $bottomleft;
+	   -moz-border-radius: $topright $topleft $bottomright $bottomleft;
+	        border-radius: $topright $topleft $bottomright $bottomleft;
+}
+@mixin gradient($top, $botom){
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from($top), to($botom));
+	background-image: -webkit-linear-gradient(top, $top, $botom); 
+	background-image:    -moz-linear-gradient(top, $top, $botom);
+	background-image:     -ms-linear-gradient(top, $top, $botom);
+	background-image:      -o-linear-gradient(top, $top, $botom);
+}
+@mixin btn-blue{
+	@include gradient(#47afee, #348ed5);
+	@include radius(4px, 4px, 4px, 4px);
+	@include box-shadow(1px, 1px, 1px, 1px, #e0e0e0);
+	padding: 5px 15px 4px;
+	border: none;
+	color: #fff;
+	font: 22px/22px db_metta_x_lightlight;
+	background-color: #47afee;
+	
+	&:hover{
+		@include gradient(#55c2f3, #40a4e2);
+		cursor: pointer;
+		color: #fff;
+		text-decoration: none;
+	}
+	
+	&:after{
+		content: " »";	
+	}
+}
+@mixin btn-gray{
+  @include gradient(#DFDFDF, #BEBEBE);
+  @include radius(4px, 4px, 4px, 4px);
+  @include box-shadow(1px, 1px, 1px, 1px, #e0e0e0);
+  padding: 5px 15px 4px;
+  border: none;
+  color: #fff;
+  font: 22px/22px db_metta_x_lightlight;
+  background-color: #DADADA;
+
+	&:hover{
+		@include gradient(#DFDFDF, #BEBEBE);
+		cursor: pointer;
+		color: #fff;
+		text-decoration: none;
+	}
+  
+  &:after{
+    content: " »";	
+  }
+}
+@mixin btn-orange{
+	@include gradient(#f3821d, #df7d26);
+	@include radius(4px, 4px, 4px, 4px);
+	@include box-shadow(1px, 1px, 1px, 1px, #e0e0e0);
+	padding: 5px 15px 4px;
+	border: none;
+	color: #fff;
+	font: 22px/22px db_metta_x_lightlight;
+	background-color: #f3821d;
+	
+	&:hover{
+		@include gradient(#df7d26, #df7d26);
+		cursor: pointer;
+	}
+	
+	&:after{
+		content: " »";	
+	}
+}
+.btn-blue{
+	@include btn-blue;
+}
+.btn-gray{
+	@include btn-gray;
+}
+.btn-orange{
+	@include btn-orange;
+}

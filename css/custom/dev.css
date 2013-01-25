@@ -1,0 +1,248 @@
+.node-view .field-name-field-webboard-media,
+.form-item-field-webboard-video-und-0-video-url label,
+#web-link-node-form #edit-field-image-und-0-upload-button,
+#user-profile-form .form-item-comment-notify,
+#user-profile-form #edit-l10n-client,
+#field-link-add-more-wrapper .form-type-link-field > label,
+.page-node-add-web-link .vertical-tabs,
+#block-menu-menu-footer-menu .content > ul > li > ul,
+#edit-field-rf-upload-basis .form-managed-file .ajax-processed {
+  display: none;
+}
+.online-form .view-research-fund-form-user ul li{margin-left:15px;}
+#edit-field-rf-status-und > div {
+  float: left;
+  margin-right: 18px;
+  height: 30px;
+}
+
+#edit-field-rf-status {
+  float: left;
+}
+
+#edit-field-rf-fund-accept,
+#edit-field-rf-note,
+.research-fund-title {
+  clear: both;
+}
+#edit-field-rf-fund-accept,
+#edit-field-rf-approve-date,
+#edit-field-rf-end-date{
+  width: 30%;
+  float: left;
+}
+#edit-field-rf-approve-date legend, 
+#edit-field-rf-end-date legend {
+  margin-bottom: 0px;
+  border-bottom: 0 none;
+}
+
+.profile {
+  margin-left: 20px;
+  float: left;
+  width: 500px;
+}
+
+.page-user .region-content {
+  position: relative;
+}
+
+#block-views-research_fund_form_user-block .field-content, 
+#block-views-research_fund_form_user-block .field-content a {
+  font-size: 13px;
+}
+.view-faq .views-row{clear:both;}
+.view-faq .views-field-nothing{float: right;}
+
+.page-node-add-web-link .field-name-field-image {
+  text-align: left;
+}
+
+#block-views-partners-block .btn-edit-nodequeue {
+  font-size: 12px;
+  margin-right: 10px;
+  float: right;
+}
+
+.view-research-fund-sticky .views-row {
+  clear: both;
+  height: 245px;
+}
+.view-research-fund-sticky .sticky-No .views-field-field-date-range {
+  display: none;
+}
+
+.view-research-fund-sticky .views-field {
+  margin-left: 365px;
+}
+#block-views-research_fund_sticky-block_1 .view-research-fund-sticky .views-field {
+  margin-left: 240px;
+}
+#block-views-research_fund_sticky-block_1 .view-research-fund-sticky .views-field-php {
+  margin-top: 20px;
+}
+#block-views-research_fund_sticky-block_1 .view-research-fund-sticky .views-row {
+  clear: both;
+  height: 150px;
+}
+#block-views-research_fund_sticky-block_1 {
+  margin-bottom: 50px;
+}
+.view-research-fund-sticky .views-field-field-image {
+  margin-left: 0px !important;
+  float: left;
+  
+}
+.research-fund-form-link {
+  margin-right: 5px;
+}
+.field-name-field-research-fund-form-list {
+  margin-top: 30px;
+}
+
+.view-raw-list li div {
+  display: inline;
+}
+.view-raw-list .views-field-field-file a,
+.view-raw-list .views-field-field-file span.dcount {
+  display: none;
+}
+
+.view-raw-list .views-field-field-file {
+  margin-left: 5px;
+}
+
+.logo-site-name {
+  float: left;
+  margin-right: 20px;
+}
+#site-slogan {
+  font-size: 20px;
+  font-family: db_metta_x_mediummedium;
+  line-height: 20px;
+  margin-top: 20px;
+  width: 520px;
+  *width: 330px;
+}
+
+.view-raw-list {
+  position: relative;
+}
+
+.view-raw-list .raw-add {
+  position: absolute;
+  top: -50px;
+  right: 0;
+}
+
+
+#quicktabs-research_fund_form .item-list ul.quicktabs-tabs li:hover,#quicktabs-research_fund_form .item-list ul.quicktabs-tabs li{
+	-webkit-border-radius:4px 4px 4px 4px;
+	-moz-border-radius:4px 4px 4px 4px;
+	border-radius:4px 4px 4px 4px;
+	padding:5px 15px 4px;
+	border:none;
+	background-color:#e1dedc;
+        font:22px/22px db_metta_x_lightlight;
+}
+
+#quicktabs-research_fund_form .item-list ul.quicktabs-tabs li:hover,#quicktabs-research_fund_form .item-list ul.quicktabs-tabs li.active {   
+        -webkit-border-radius:4px 4px 4px 4px;
+        -moz-border-radius:4px 4px 4px 4px;
+        border-radius:4px 4px 4px 4px;
+        padding:5px 15px 4px;
+        border:none;
+        background-color:#47afee;
+        font:22px/22px db_metta_x_lightlight;
+}
+
+#quicktabs-research_fund_form .item-list ul.quicktabs-tabs li a{color:#000;}
+
+#quicktabs-research_fund_form .item-list ul.quicktabs-tabs li:hover a,#quicktabs-research_fund_form .item-list ul.quicktabs-tabs li.active a{
+color:#fff;
+}
+
+.view-id-download .views-field-count {
+  float: left;
+  margin-right: 5px;
+}
+.tabledrag-toggle-weight-wrapper {
+  display: none;
+}
+
+.view-slide-front .view-footer{
+position: relative;
+z-index: 90;
+float: right;
+bottom: 25px;
+margin-right: 10px;
+}
+.view-slide-front .view-footer a{
+color:#fff;
+}
+
+.block-textsize ul li {list-style:none;}
+.textsize-bigger .content {font-size:130%;}
+.textsize-biggest .content {font-size: 160%;}
+
+
+
+.wai-text {
+	text-indent: -999em;
+	overflow: hidden;
+	margin: 0;
+	width: 100%;
+        position: absolute;
+        height: 65px;
+}
+.wai-text ul{
+	list-style: none;
+}
+
+.wai-text a:focus{
+	position: absolute;
+	left: 0;
+}
+
+#skip-link a:focus,
+#accessibility-top a:focus {
+	position: absolute !important;
+  z-index: 20000 !important;
+  color: #EFEFEF !important;
+	background: #333 !important;
+	text-indent: 0 !important;
+	top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 20px !important;
+  text-align: center  !important;
+  display: block !important;
+}
+#block-menu-menu-footer-menu li.last {
+  width: 280px;
+}
+.jcarousel-prev-horizontal,.jcarousel-next-horizontal{text-indent: -999em;}
+.node-web_link-form .field-name-title-field{display:none;}
+.language-switcher-locale-url li{list-style: none; display: inline;}
+.block-partner .block-title{position: absolute; left: -999em;}
+#block-views-slide_front-block .block-title{position: absolute; left: -999em;}
+.view-slide-front .views-field-title h2,
+.view-slide-front .views-field-title h3 {
+  width: 100%;
+}
+
+#skip-bt-nav a {
+  float: right;
+}
+#footer {
+  clear: both;
+}
+.language-link {
+  display: none;
+}
+.page-node-translate .language-link {
+  display: block;
+}
+
+.views-slideshow-cycle-main-frame-row {display: block !important;}
+

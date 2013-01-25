@@ -1,0 +1,113 @@
+/*......................................................................... 
+    Project:   BaseTheme - BTFP
+    Version:   1.0
+    File:      layout.css
+    copyright: Since 2012 Opendream Co., Ltd.
+    By:        Chatchai Tutiyanond
+......................................................................... */
+
+@import "mixin";
+
+
+
+#main-content, #sidebar-left, #sidebar-second {
+  float: left; 
+}
+#base-fixed {
+	.two-sidebars {
+		#content-inner, #content-top {
+			margin: 0 255px; /* sidebar width + margin (between content & sidebar 1 sidebar) | sample: 240 + margin 15 | */
+		}
+		#sidebar-left {
+			margin-left: -100%;
+			width: 240px;                       
+		}
+		#sidebar-right {
+			margin-left: -240px;
+			width: 240px; 
+		} 
+	} /** (two sidebar) **/
+			
+	.sidebar-left {
+		#content-inner, #content-top {
+			margin-left: 315px; /* sidebar width + margin (between content & sidebar) */
+		}
+		#sidebar-left {
+			margin-left: -100%;
+			width: 300px; 
+		} 
+	}/** (left sidebar) **/
+}
+
+#main-content{
+	width: 910px;
+	
+	.front &{
+		width: 950px;
+	}
+}
+
+.one-sidebar{
+	&.sidebar-second {  
+		#main-content{
+			width: 600px;
+			padding-right: 35px;
+			margin-right: 275px; /* sidebar width + margin (between content & sidebar) */
+		}
+		#sidebar-second {
+			margin-left: -270px;
+			width: 270px; 
+		} 
+	}/** (right sidebar) **/
+}
+
+.container{
+	position: relative;
+	width: 950px;
+	margin: 0 auto;
+	padding: 0 15px;
+	
+	.front &{
+		padding: 0;
+	}
+}
+
+/* Header
+---------------------------------------------------------*/
+#header{
+	position: relative;
+	z-index: 498;
+	
+	.container{
+		padding-top: 60px;
+	}
+}
+
+.region-content{
+	@include pie-clearfix;
+}
+
+#header-blocks{
+	position: relative;
+	width: 976px;
+	height: 175px;
+	float: none;
+	margin: 0 0 20px -13px;
+}
+
+/* Content
+---------------------------------------------------------*/
+#content-column, .region-tertiary-content{
+	padding: 20px;
+	margin: 0 0 20px;
+}
+
+.front #content-column{
+	padding: 0;
+}
+
+/* Footer
+---------------------------------------------------------*/
+#footer{
+	margin: 0;
+}

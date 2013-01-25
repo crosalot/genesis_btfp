@@ -1,0 +1,524 @@
+/*......................................................................... 
+    Project:   BaseTheme - BTFP
+    Version:   1.0
+    File:      theme-blind.css
+    copyright: Since 2012 Opendream Co., Ltd.
+    By:        Chatchai Tutiyanond
+......................................................................... */
+
+@import "mixin";
+
+/*********************************************************************
+				This theme defualt on website
+	You need seperate color, background and all about theme style
+**********************************************************************/
+
+
+/*--- Global ---*/
+$BaseColor : #333;
+$BaseLinkColor : #1c6aa4;
+$BaseLinkColorHover : #5299cd;
+
+$AlterLinkColor : #000;
+
+/* Global Link Styles
+---------------------------------------------------------*/
+body#genesis-1c {
+	color: $BaseColor;
+	background: url('../../images/bg.png');
+}
+a {
+	color: $BaseLinkColor;
+}
+
+a:link,
+a:visited {}
+
+a:hover,
+a:focus,
+a:active  {
+	text-decoration: underline;
+	color: $BaseLinkColorHover;
+}
+
+a.active  {}
+a.active-trail {}
+
+/* @group Header Style */
+
+/* Var
+---------------------------------------------------------*/
+
+/*--- Login ---*/
+$bgLognin : #e4e4e4;
+$LoginFontColor : #444;
+$LoginBorderColor : #6c6c6c;
+
+/*--- Search ---*/
+$brColor : #cdcccb;
+
+/* Header
+---------------------------------------------------------*/
+#header{
+	background: url('../../images/bg-top.png') repeat-x left top;
+	.container{
+		background: url('../../images/logo-top.jpg') no-repeat top left;
+	}
+}
+
+/* Navigation
+---------------------------------------------------------*/
+#header-blocks{
+	background: url('../../images/nav.png') no-repeat left bottom;
+	
+	.not-front &{
+		background: url('../../images/nav-not-front.png') no-repeat left bottom;
+	}
+}
+.nav{
+	a{
+		color: $AlterLinkColor;
+	}
+}
+
+/*--- Show state ---*/
+$shadow : #e9e3df;
+$navLink : #fff;
+$navLinkHover : #eee;
+
+.sf-depth-1.sfHover{
+	> ul{
+		@include box-shadow(5px, 5px, 0px, 0px, $shadow);
+		a{
+			background: $navLink;
+			padding: 10px;
+			border-top: 1px solid #e5e5e5;
+			&:hover{
+				background: $navLinkHover;
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+/*--- Submenu Lv 1 ---*/
+ .front a{
+	&.sf-depth-1.menuparent{
+		padding-right: 15px;
+		background: url('../../images/ic-nav-parent.png') no-repeat right center ;
+	}
+}
+
+.not-front{
+	li{
+		&.sf-depth-1.menuparent{
+			padding-right: 15px;
+			color: #fff;
+			background: url('../../images/ic-nav-parent-white.png') no-repeat right center ;
+		}
+	}
+	
+	a.sf-depth-1{
+		color: #fff;
+	}
+}
+
+
+/*--- Submenu Lv 2 ---*/
+.sf-depth-2.menuparent{
+	> a.menuparent{
+		background: $navLink url('../../images/ic-nav-sub.png') no-repeat 260px 15px ;
+		
+		&:hover{
+			background: $navLinkHover url('../../images/ic-nav-sub.png') no-repeat 260px -94px ;
+		}
+	}
+}
+
+/*--- Active Menu ---*/
+.main-menu{
+	> li{
+		> a.active{ background: url('../../images/nav-active-bg.png'); }
+	}
+	
+	.active-trail {
+		> a{ background: url('../../images/nav-active-bg.png'); }
+	}
+}
+
+
+/* Loging & Account Bar
+---------------------------------------------------------*/
+ul.loginpop{
+	color: $LoginFontColor;
+	background: $bgLognin;
+	
+	.pop-username, .pop-add{
+		border-color: $LoginBorderColor;
+	}
+	
+	a{
+		color: $AlterLinkColor;
+	}	
+}
+
+/* Searchbox
+---------------------------------------------------------*/
+.block-search{
+	.form-text{
+		border-color: $brColor;
+	}
+	
+	.form-submit{
+		background: url('../../images/ic-search.png') no-repeat left top;
+	}
+}
+
+/* @end */
+
+
+/* Content Backgroound
+---------------------------------------------------------*/
+#content-column, .region-tertiary-content{
+	@include box-shadow(1px, 1px, 5px, 1px, #E7E2DF);
+	background: #fff;
+}
+
+.front #content-column{
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	background: transparent;
+}
+
+
+/* Footer
+---------------------------------------------------------*/
+
+/*--- Footer ---*/
+$bgFooter : #fefdfc;
+
+/*--- Counter ---*/
+$CounterColor : #7f7c7b;
+
+#footer{
+	background: $bgFooter url('../../images/bg-footer.png') repeat-x left top;
+	
+	a{
+		color: $AlterLinkColor;
+	}
+}
+
+#counter{
+	color: $CounterColor;
+}
+
+
+/* View Calendar
+---------------------------------------------------------*/
+$bgDate : #ededed;
+
+.views-field-field-date-event{
+	background: $bgDate;
+}
+
+/*--- View calendar List ---*/
+.block-views-calendar-list{
+	.more-link{
+		a{
+			@extend .btn-blue;
+		}
+	}
+}
+
+/* Table Calendar
+---------------------------------------------------------*/
+$bgCalendar : #f9f9f9;
+$dayColor : #000;
+$todayColor :  #ddd;
+$bgDayOn : #403f81;
+$dayOnColor : #fff;
+
+.btfp-calendar{
+	@include radius(5px, 5px, 5px, 5px);
+	background: $bgCalendar;
+	
+	th.days{
+		color: $dayColor;
+	}
+
+	td.today{
+		@include radius(5px, 5px, 5px, 5px);
+		background: $todayColor !important;
+	}
+	.mini-day-on{
+		@include radius(5px, 5px, 5px, 5px);
+		background: $bgDayOn;
+		
+		span{
+			color: $dayOnColor;
+		}
+	}
+}
+
+/* View News
+---------------------------------------------------------*/
+$borderimgae : #e5e5e5;
+$dateColor : #666;
+
+.block-views-news{
+	.views-field-field-image{
+		img{
+			border-color: $borderimgae;
+		}
+	}
+	.more-link{
+		a{
+			@extend .btn-blue;
+		}
+	}
+}
+
+.views-field-created,
+.views-field-field-date-range,
+.views-field-count{
+	color: $dateColor;
+}
+
+/* Pager
+---------------------------------------------------------*/
+$pagerBorderColor : #dbdbdb;
+$pagerLinkcolor : #646464;
+
+.item-list{
+	.pager{
+		li{
+			border-color: $pagerBorderColor;
+		}
+		a{
+			color: $pagerLinkcolor;
+		}
+	}
+}
+
+.sidebar-second #main-content{
+	background: url('../../images/bg-sidebar.png') no-repeat right top;
+}
+
+/* Field Group
+---------------------------------------------------------*/
+$txtBoxborder : #d8d8d8;
+$txtBoxBG : #fbfbfb;
+
+input.form-text{
+	border-color: $txtBoxborder;
+	background: $txtBoxBG;	
+}
+
+.node-research_fund_form-form{
+	.form-submit{
+		@extend .btn-blue;
+    &.disabled {
+      @extend .btn-gray;
+    
+    }
+	}
+}
+
+
+/* Gallery List
+---------------------------------------------------------*/
+.block-gallery-list{
+	.views-field-views-ifempty{
+		background: url('../../images/bg-gallery.png') no-repeat left top;
+	}	
+}
+
+/* Sidebar List
+---------------------------------------------------------*/
+.block-sidebar-list {
+	.menu{
+		li{
+			background: url('../../images/ic-bullet.png') no-repeat 0 4px;
+		}
+	}
+}
+
+/* Download List
+---------------------------------------------------------*/
+.view-download{
+	.views-row{
+		border-color: #b4b4b4;
+	}
+	
+	.views-field-created{
+		border-color: #b4b4b4;
+	}
+	
+	.download-file-type{
+		background: url('../../images/ic-download.png') no-repeat left center;
+		
+		&.doc   { background-position: 0 0; }
+		&.pdf   { background-position: 0 -50px; }
+		&.ppt   { background-position: 0 -100px; }
+		&.winrar{ background-position: 0 -150px; }
+		&.txt   { background-position: 0 -200px; }
+		&.xls   { background-position: 0 -250px; }
+		&.winzip{ background-position: 0 -300px; }
+	}
+}
+
+/* Research Fund Step
+---------------------------------------------------------*/
+.research-fund-step-nav{
+	background: #f5f5f5 url('../../images/research-form-step.png') no-repeat left top;
+}
+.step-step_rf_section2{ background-position: 0 -32px; }
+.step-step_rf_upload { background-position: 0 -64px; }
+.step-step_rf_confirm { background-position: 0 -96px; }
+
+
+/* Board Team
+---------------------------------------------------------*/
+.view-board-management{
+	.views-field-field-board-position{
+		color: #555;
+	}
+}
+/* Board Team Node
+---------------------------------------------------------*/
+.node-board{
+	.field-name-field-image{
+		img{
+			@include box-shadow(0px, 0px, 5px, 3px, #e1e1e1);
+		}
+	}
+}
+
+/* Download List
+---------------------------------------------------------*/
+.view-web-link{
+	.views-row{
+		border-color: #b4b4b4;
+	}
+}
+
+
+/* Research Fund Node
+---------------------------------------------------------*/
+.node-research-fund{
+	.field-type-datetime{
+		border-color: #b4b4b4;
+		
+		/*--- Date ---*/
+		.field-label{
+			background: url('../../images/icon.png') no-repeat left top;
+		}
+		
+		.field-item{
+			color: #555;
+		}
+	}
+	
+	/*--- File download ---*/
+	.field-type-file{
+		/*--- Date ---*/
+		.field-label{
+			background: url('../../images/icon.png') no-repeat 0 -30px;
+		}
+	}
+	.research-fund-form-link{
+		@extend .btn-blue;
+	}
+}
+
+/* Feed Block
+---------------------------------------------------------*/
+.ic-rss{
+	background: url('../../images/ic-rss.png') no-repeat left top;
+}
+
+
+/* Webboard
+---------------------------------------------------------*/
+/*--- Base Class ---*/
+.topic-list{
+	.views-row{
+		background: #e7e7e7;
+	}
+	
+	/*--- Category 2 Cols /webboard ---*/
+	.left-col{
+		background: #eee;
+	}
+	.right-col{
+		background: #e7e7e7;
+	}
+	.ic-folder{
+		background: url('../../images/ic-download.png') no-repeat 0 -350px;
+	}
+}
+
+/*--- /webboard/list/ ---*/
+.topic-group{
+
+	/*--- Category 2 Cols /webboard ---*/
+	.detail{ /*Right Cols*/
+		.views-field{
+			color: #565656;
+		}
+	}
+
+	/*--- Comment & Count ---*/
+	.views-field-comment-count .field-content,
+	.views-field-totalcount .field-content{
+		border-right-color: #565656;
+	}
+
+	/*--- Last Time Comment ---*/
+	.views-field-last-comment-timestamp{
+		color: #999 !important;
+	}
+
+	.ic-status{
+		background: url('../../images/ic-download.png') no-repeat 0 -400px;
+	}
+	.is-hot     { background-position: 0 -500px !important; }
+	.status--new{ background-position: 0 -450px; }
+	
+	.sticky-On{
+		background: #d0d0d0;
+	}
+}
+
+/*--- Sticky Topic ---*/
+.sticky-On{	
+	.topic{ /*Left Cols*/
+		background: #d6d6d6;
+	}
+	.detail{ /*Right Cols*/
+		background: #d0d0d0;
+	}
+	
+	/*--- Last Time Comment ---*/
+	.views-field-last-comment-timestamp{
+		color: #565656 !important;
+	}
+}
+
+
+#sidebar-second .block{
+	margin-top: 40px;
+}
+.node-submitted {
+	color: #888;
+	margin: 0 0 15px;
+}
+
+#highlighted{
+	background: url('../../images/bg-feature-wrap.jpg');
+	
+	.wrapper{
+		background: url('../../images/bg-feature.jpg') no-repeat top center;
+	}
+}

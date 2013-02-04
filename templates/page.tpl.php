@@ -198,7 +198,7 @@
     
    
     <div id="skip-bt-nav" class="container">
-      <a href="#main-content">^ <?php print t('Back to main content'); ?></a>
+      <a href="#main-content">^ <?php print t('Back to top'); ?></a>
     </div>
 
     <?php if ($page['footer'] || $feed_icons): ?>

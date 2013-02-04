@@ -1,0 +1,116 @@
+.node-board {
+	.field-name-field-board-position {
+		.field-label {
+			float: none;
+		}
+	}
+}
+
+/* Gallery */
+.view-gallery-page {
+	&.block-gallery-list {
+		.views-field {
+			margin-left: 196px;
+		}
+		.views-field-views-ifempty {
+			background-image: none;
+			padding: 8px 0;
+			margin-left: 0;
+			margin-right: 10px;
+		}
+	}
+}
+
+/* Research Fund Landing Page */
+.view-research-fund-sticky {
+	.views-row {
+		.views-field-field-image {
+			width: 100%;
+			img {
+				width: 100%;
+				height: auto;
+				padding: 0;
+			}
+		}
+		.views-field {
+			margin-left: 0;
+		}
+	}
+}
+
+/* News and Activities */
+.node-announcement {
+	.node-content {
+		.field-type-image {
+			margin-right: 0;
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+}
+
+/* Weblink FrontPage */
+#block-views-partners-block {
+	.jcarousel-skin-default {
+    	.jcarousel-item {
+      		width: 21%;
+    	}
+  	}
+}
+
+@media screen and (max-width: 736px) {
+	/* Node Gallery */
+	.node-gallery {
+		.field-name-field-image-gallery,
+		.field-name-field-video-url {
+			.field-item {
+				width: 25%;
+			}
+		} 
+	}
+}
+
+
+@media screen and (max-width: 480px) {
+	/* Node Gallery */
+	.node-gallery {
+		.field-name-field-image-gallery,
+		.field-name-field-video-url {
+			.field-item {
+				width: 33.33%;
+			}
+		} 
+	}
+}
+
+/* Hilight Front */
+@media screen and (max-width: 400px) {
+	#block-views-front_news-block,
+	#block-views-front_news-block_1 {
+		width: 100% !important;
+		float: none;
+		padding: 0;
+		margin: 0;
+		height: auto;
+		h2.block-title {
+			width: 102%;
+			background-image: url(/sites/all/themes/genesis_btfp/images/key-768.png);
+			height: auto;
+			padding-left: 20px;
+		}
+		.content {
+			margin-top: 15px;
+			.view-content {
+				height: auto;
+			}
+			.view-footer {
+				position: relative;
+				float: right;
+				right: 0;
+				bottom: 6px;
+			}
+		}
+	}
+}

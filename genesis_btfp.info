@@ -24,6 +24,26 @@
   stylesheets[all][] = css/default/navigation.css
   stylesheets[all][] = css/default/custom.css
   
+  stylesheets[screen and (max-width: 959px)][] = css/responsive/responsive.css
+  stylesheets[screen and (max-width: 959px)][] = css/responsive/responsive-768.css
+  stylesheets[screen and (max-width: 767px)][] = css/responsive/responsive-480.css
+  stylesheets[screen and (max-width: 479px)][] = css/responsive/responsive-320.css
+  
+  stylesheets[screen and (max-width: 959px)][] = css/responsive/responsive-crosalot.css
+  stylesheets[screen and (max-width: 959px)][] = css/responsive/responsive-768-crosalot.css
+  stylesheets[screen and (max-width: 767px)][] = css/responsive/responsive-480-crosalot.css
+  stylesheets[screen and (max-width: 479px)][] = css/responsive/responsive-320-crosalot.css
+  
+  stylesheets[screen and (max-width: 959px)][] = css/responsive/responsive-dew.css
+  stylesheets[screen and (max-width: 959px)][] = css/responsive/responsive-768-dew.css
+  stylesheets[screen and (max-width: 767px)][] = css/responsive/responsive-480-dew.css
+  stylesheets[screen and (max-width: 479px)][] = css/responsive/responsive-320-dew.css
+  
+  stylesheets[screen and (max-width: 959px)][] = css/responsive/responsive-bob.css
+  stylesheets[screen and (max-width: 959px)][] = css/responsive/responsive-768-bob.css
+  stylesheets[screen and (max-width: 767px)][] = css/responsive/responsive-480-bob.css
+  stylesheets[screen and (max-width: 479px)][] = css/responsive/responsive-320-bob.css
+  
 ; Opendream stylsheets.
   stylesheets[all][] = css/custom/base.css
   stylesheets[all][] = css/custom/layout.css
@@ -31,6 +51,7 @@
   stylesheets[all][] = css/custom/theme-blind.css
   stylesheets[all][] = css/custom/dev.css
   stylesheets[all][] = css/custom/donuzz.css
+ 
 ; The regions defined in the page.tpl.php file. The name in brackets is the 
 ; name of the variable. The text after the = sign is the short description 
 ; you see on the block configuration page.

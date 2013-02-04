@@ -1,0 +1,263 @@
+/* wrapper */
+#wrapper {
+	overflow: hidden;
+}
+
+/* Footer Responsive */
+#footer {padding-left: 10px; padding-right: 10px;}
+
+#skip-bt-nav a {padding-right: 10px;}
+.not-front .block-feed {right: 0;}
+#block-block-1,
+#block-menu-menu-footer-menu,
+#block-simplenews-1 {
+	width: 100%;
+	margin-left: 0;
+	float: left;
+}
+
+#block-block-1,
+#block-menu-menu-footer-menu {
+	border-bottom: 1px dotted #8f8f8f;
+	margin-bottom: 0;
+	padding-bottom: 20px;
+}
+
+#block-menu-menu-footer-menu {
+	padding-top: 20px;
+	ul.menu {
+		width: 100%;
+	}
+}
+
+#block-simplenews-1 {
+	padding-top: 20px;
+	.form-item-mail {
+		float: left;
+		margin-top: 0;
+		.compact-form-field {width: 150px;}
+	}
+	.form-submit {
+		margin-top: 0;
+	}
+}
+
+/* main-content width 100% */
+.one-sidebar.sidebar-second #main-content {
+	background-image: none;
+	width: 100%;
+	padding-right: 0;
+	margin-right: 0;
+}
+
+.one-sidebar.sidebar-second #sidebar-second {
+	margin-left: 0;
+	width: 100%;
+}
+
+#content {
+	img {
+		&.budget-img,
+		&.structure-img {
+			width: 100% !important;
+		}
+	} 
+}
+
+/* views list (view rows) */
+.view-web-link,
+.view-download,
+.view-board-management,
+.view-gallery-page {
+	overflow: hidden;
+	.view-content {
+		.views-row {
+			width: 100%;
+		}
+	}
+}
+.view-download {
+	.views-field-field-file-download {
+		right: 22px;
+	}
+	.download-file-type {
+		width: 50px;
+	}
+	.views-field-title {
+		width: auto;
+		margin-left: 55px;
+		float: none;
+	}
+	.views-field-created {
+		margin-left: 55px;
+	}
+}
+
+#content-column {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+	/* Node Gallery */
+	.node-gallery {
+		.field-name-field-image-gallery,
+		.field-name-field-video-url {
+			.field-item {				
+				width: 20%;
+				max-width: 179px;
+				a {
+					img {
+					}
+				}
+			}
+		} 
+	}
+.view-video-show {
+	.embedded-video {
+		.player iframe {
+			width: 100%;
+		}
+	}
+}
+/* Research Fund Landing Page And Detail Page */
+.view-research-fund-sticky {
+	.views-row {
+		height: auto;
+		padding: 10px;
+	}
+}
+
+.node-research-fund {
+	.node-content {
+		.field-type-image {
+			width: 100%;
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+		.field-name-body {
+			width: 100%;
+		}
+	}
+}
+
+/* User Profiles */
+#quicktabs-research_fund_form {
+	.item-list ul.quicktabs-style-navlist {
+		width: 100% !important;
+		float: none;
+		li {
+			width: 100%;
+			padding: 5px 0 !important;
+			a {width: 100%;}
+		}
+	}
+	#quicktabs-container-research_fund_form {
+		width: 100%;
+	}
+}
+#user-profile-form {
+	.form-item {
+		width: 100%;
+		.form-text {
+			width: 90%;
+			padding-right: 0;
+		}
+	}
+	.password-strength {
+		width: 30%;
+	}
+	.form-text.password-field,
+	.form-text.password-confirm {
+		width: 60%;
+	}
+	.field-group-fieldset {
+		width: 95%;
+		.form-wrapper {
+			width: 95%;
+			.form-select {
+				width: 95%;
+				option {
+					width: 90%;
+				}
+			}
+		}
+	}
+	#edit-comment-notify-settings {
+		width: 95%;
+	}
+}
+
+/* Login Popup */
+.block-loginpop {
+	right: -7px;
+}
+
+/* News & Activities */
+.block-views-news .views-row-odd {
+	margin-right: 0;
+	margin-bottom: 20px;
+}
+#block-views-calendar-block_1 {
+	width: 100%;
+}
+.page-event-list {
+	#block-system-main {
+		width: 100%;
+		.block-views-calendar-list {
+			.views-row {
+				margin-bottom: 20px;
+			}
+		}
+	}
+}
+
+/* Weblink FrontPage */
+#block-views-partners-block {
+	padding: 5px;
+	.view-content {
+		ul li {
+			margin: 5px;
+		}
+	}
+	.jcarousel-skin-default {
+    	.jcarousel-container-horizontal {
+      		height: auto;
+      		padding: 0;
+      		max-width: 820px;
+      		width: 100%;
+      		.jcarousel-prev,
+      		.jcarousel-next {
+        		display: none;
+      		}
+    	}
+    	.jcarousel-item {
+      		margin: 5px 5px;
+      		max-width: 120px;
+      		width: 23.5%;
+      		height: auto;
+    	}
+    	.jcarousel-clip-horizontal	{
+      		max-width: 820px;
+      		width: 100%;
+      		ul {
+        		width: 100%!important;
+        		li {
+          			img {
+            			width: 100%!important;
+            			height: auto!important;
+          			}
+        		}
+      		}
+    	}
+  	}
+}
+
+/* Fund List */
+.block-views-news {
+	.page-project-list {
+		.views-row {
+			width: 100%;
+		}
+	}
+}

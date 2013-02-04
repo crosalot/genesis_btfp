@@ -43,6 +43,7 @@
   <title><?php print $head_title; ?></title>
   <?php print $styles; ?>
   <?php print $scripts; ?>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 <?php // modify the layout by changing the id, see layout.css ?>
 <body id="genesis-1c" <?php print $attributes;?>>

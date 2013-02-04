@@ -1,0 +1,81 @@
+/* Page contact */
+#contact-site-form{
+  input{
+    
+    &.form-text{
+      max-width: 317px;
+      width: 100%;
+      padding: 5px 0px;
+    }
+  }
+
+}
+#recaptcha_widget_div{
+  position: relative;
+  right: 10px;
+}
+
+/* Page user register */
+.page-user-register{
+  .local-tasks{
+    
+    ul{
+
+      li{
+
+        a{
+          padding: 5px;
+          margin: 0px;
+        }    
+      }
+    }
+  }
+}
+
+#user-register-form{
+  input{
+    
+    &.form-text{
+     
+      width: 100%;
+      padding: 5px 0px;
+    }
+  }
+
+} 
+
+
+/*  Pange News */
+.block-views-calendar-list{
+  margin: 0px;
+  ul{
+    li{
+      .views-field-title{
+        clear: both;
+      }
+    }
+  }
+}
+
+.block-views-calendar{
+  max-width: 350px;
+  width: 100%;
+}
+
+.block-views-news{
+  ul{
+    li{
+      .views-field{
+        margin: 0;
+      }
+      .views-field-title,.views-field-body{
+        clear: both;
+      }
+    }
+    &.views-row{
+      margin: 0;
+      max-width: 410px;
+      width: 100%;
+    }
+  }
+}

@@ -260,12 +260,14 @@ form.comment-form{
 /* Feature Slide - Frontpage */
 .view-slide-front { 
 	position: relative;
-	width: 950px;
+	max-width: 950px;
+	width: 100%;
 	height: 340px;
 		
 	.views-slideshow-cycle-main-frame-row {
 		position: relative;
-		width: 950px;
+    width: 100% !important;
+    max-width: 950px;
 		height: 340px;
 	}
 	

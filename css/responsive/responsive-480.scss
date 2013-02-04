@@ -1,0 +1,58 @@
+
+
+
+@media screen and (max-width: 640px) {
+  #site-slogan {
+    display: none;
+  }
+  
+  #header .container {
+    background: url("../../images/logo-top-small.png") no-repeat 10px 0;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .view-slide-front .views-field-field-image img {
+    width: auto;
+    text-align: center;
+    float: none;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .view-slide-front .views-field-title *,
+  .view-slide-front .views-field-title h2,
+  .view-slide-front .views-field-title h3 {
+    float: none;
+    display: block;
+  }
+  .view-slide-front .views-field-field-teaser {
+    display: block;
+    max-height: 300px;
+  }
+  
+  .view-slide-front .views-slideshow-controls-text-pause a,
+  .view-slide-front .views-slideshow-slide-counter {
+    bottom: 30px;
+  }
+  
+  #highlighted, 
+  .view-slide-front,
+  .views-slideshow-cycle-main-frame {
+    height: 640px !important;
+  }
+  
+  #highlighted .wrapper {
+    background: url("../../images/bg-blue.jpg") no-repeat scroll center center transparent;
+  }
+}
+
+
+
+
+
+
+
+
+
+

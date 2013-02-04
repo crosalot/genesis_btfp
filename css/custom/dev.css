@@ -247,3 +247,11 @@ color:#fff;
 
 .views-slideshow-cycle-main-frame-row {display: block !important;}
 
+#accessibility-program li{ 
+  list-style: none;
+  float: left;
+  padding:0px 20px;
+}
+.clear{
+  clear: both;
+}

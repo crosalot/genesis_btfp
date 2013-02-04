@@ -1,3 +1,4 @@
+
 /*......................................................................... 
     Project:   BaseTheme - BTFP
     Version:   1.0
@@ -155,6 +156,7 @@ $font_mettaMed : db_metta_x_mediummedium;
 ---------------------------------------------------------*/
 #branding{
 	margin: 35px 0 0 35px;
+	position: absolute;
 }
 
 .block-loginpop{
@@ -772,22 +774,30 @@ div.messages{
 	}
 }
 
-.group-image{
+.group-image,
+.group-video {
 	.field-item{
 		float: left;
-		width: 180px;
-		margin: 0 20px 0 0;
-	}
-	img{
-		@include box-shadow(0px, 0px, 5px, 3px, #e1e1e1);
-		padding: 7px;
-		margin: 0 10px 20px 0;
+		margin: 0;
+		a {
+			display: block;
+			@include box-shadow(0px, 0px, 5px, 3px, #e1e1e1);
+			padding: 7px;
+			margin: 5px;
+			img{
+				display: block;
+				width: 100%;
+				height: auto;
+			}
+		}
 	}
 	p{
 		display: none;
 	}
 }
-
+.group-video .field-item a {
+	box-shadow: none;
+}
 
 /* Field Group Form
 ---------------------------------------------------------*/
@@ -1104,18 +1114,27 @@ input.form-text{
 ---------------------------------------------------------*/
 .node-board{
 	.field{
-		margin-left: 170px;
+		margin-left: 155px;
 	}
 	.field-name-field-image{
 		margin: 0;
-		
+		float:left;
 		img{
 			float: left;
 			padding: 7px;
 		}
 	}
 	.field-name-field-board-position{
-		height: 50px;
+		/*height: 50px;*/
+		height: 22px;
+		.field-item {line-height: 22px;}
+	}
+	.field-name-field-addthis{
+		margin-top: 30px;
+		*height: 30px;
+		margin-left: 0;
+		width: 100%;
+		float:left;
 	}
 }
 
@@ -1873,12 +1892,14 @@ input.form-text{
 	clear: none;
 	margin-top: 86px;
 	a {
+		margin: 0 5px;
 		width: 18px !important;
 		height: 18px !important;
 		&#textsize-normal {background: url('../../images/textsize-1.png') no-repeat !important;}
 		&#textsize-bigger {background: url('../../images/textsize-2.png') no-repeat !important;}
 		&#textsize-biggest {background: url('../../images/textsize-3.png') no-repeat !important;}
 	}
+	a, span { float: left;}
 }
 
 
@@ -1965,7 +1986,115 @@ input.form-text{
 
 /* Text Resize System */
 .textsize-bigger {
-	.content { font-size:130%;}
+	.content,
+	.breadcrumb { font-size: 130%;}
+	.block-feature-front {
+		.block-title { font-size: 36px + (36px * 0.3);}
+		p { font-size: 20px + (20px * 0.3);}
+	}	
+	#page-title { font-size: 42px + (42px * 0.3); line-height: 1em;}
+	.block-title { font-size: 26px + (26px * 0.3);}
+	#views_slideshow_cycle_main_slide_front-block {
+		.views-field-title { font-size: 45px;}
+		.views-field-field-teaser { font-size: 23px;}
+	}
+	.views-field-title h3,
+	.views-field-title h2 { /* all field-title views-list */
+		font-size: 130%;
+	}
+	.views-field-created, /* field-created news views-list */
+	.views-field-totalcount { /* field-totalcount weblinks views-list */
+		font-size: 12px + (12px * 0.3);
+	}
+	.calendar_tooltips-title-value,
+	.calendar_tooltips-field_date_event-value { font-size: 130%;}
+	.block-news-front {
+		.views-field-title-field a {
+			font-size: 24px + (24px * 0.3);
+			line-height: 1 em;
+		}
+		.views-field-created {
+			font-size: 12px + (12px * 0.3);
+			line-height: 1 em;
+		}
+		.view-content { height: auto;}
+	}
+		#block-views-front_news-block_1 { height: auto !important;}
+
+	.view-download {
+		.views-field-title {
+			width: 350px;
+			span {
+				font-size: 24px + (24px * 0.3);
+				line-height: 1 em;
+			}
+		}
+		.views-field-count {
+			font-size: 12px + (12px * 0.3);
+			line-height: 1 em;
+		}
+	}
+	#counter {/* background and region problem */
+		font-size: 12px + (12px * 0.3);
+		padding: 6px 0;
+	}
+	.block-footer-menu .block-title { font-size: 24px + (24px * 0.3);}
+	.btn-blue,
+	#research-fund-form-node-form .form-submit { font-size: 130%;}
+	#research-fund-form-node-form .form-submit {padding-top: 15px;}
+	#block-block-1 {
+		p {
+			font-size: 18px + (18px * 0.3);
+			line-height: 1em;
+		}
+		span {
+			font-size: 20px + (20px * 0.3);
+			line-height: 1em;
+		}
+	}
+	#block-menu-menu-footer-menu a {
+		font-size: 20px + (20px * 0.3);
+		line-height: 1em;
+	}
+	.simplenews-subscribe {
+		label { font-size: 13px + (13px * 0.3);}
+		.form-text { padding: 15px 8px 15px 8px;}
+		.form-submit {
+			font-size: 22px + (22px * 0.3);
+			line-height: 1em;
+		}
+	}
+	#web-link-node-form,
+	.contact-form {
+		.form-submit { font-size: 130%;}
+	}
+	#skip-bt-nav { font-size: 130%;}
+	.field-name-field-date-range {
+		h3.field-label { font-size: 28px + (28px * 0.3);}
+		.field-item { font-size: 13px + (13px * 0.3);}
+	}
+	.views-field-field-date-range {
+		.views-label,
+		.field-content { font-size: 13px + (13px * 0.3);}
+	}
+	#block-system-main .view-faq {
+		.views-field-title a { font-size: 30px + (30px * 0.3); line-height: 1em;}
+		.views-field-nothing a { font-size: 12px + (12px * 0.3);}
+	}
+	.node-gallery .field-group-format-title { font-size: 130%;}
+	.view-research-fund-sticky .views-row { height: auto;}
+	.node-research_fund_form-form {
+		input.form-text { font-size: 14px + (14px * 0.3); padding: 13px 7px 13px 13px;}
+		.messages li, .messages p span { 
+			font-size: 15px + (15px * 0.3) !important; 
+			line-height: 1.5em !important;
+		}
+	}
+	.node-research_fund_form-form {
+		input.form-text { font-size: 14px + (14px * 0.3); padding: 13px 7px 13px 13px;}
+	}
+	#block-block-11 .form-item-search-block-form {margin: 13px 0 !important; line-height: 1em;}
+	#block-textsize-textsize .content span { font-size: 13px !important; line-height: 20px !important;}
 }
 
 .textsize-biggest {
@@ -2073,4 +2202,16 @@ input.form-text{
 			line-height: 1.5em !important;
 		}
 	}
+	.node-research_fund_form-form {
+		input.form-text { font-size: 14px + (14px * 0.6); padding: 13px 7px 13px 13px;}
+	}
+	#block-block-11 .form-item-search-block-form {margin: 13px 0 !important; line-height: 1em;}
+	#block-textsize-textsize .content span { font-size: 13px !important; line-height: 20px !important;}
 } 
+
+
+
+
+.block-highlight-front li .caption {
+  width: auto !important;
+}

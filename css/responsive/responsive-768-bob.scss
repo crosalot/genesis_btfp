@@ -1,0 +1,51 @@
+/* Front page */
+
+
+.block-map{
+	width: 100%;
+}
+.block-address{
+	width: 100%;
+}
+/*  Page register */
+#user-register-form{
+  input{
+    
+    &.form-text{
+      max-width: 405px;
+      width: 100%;
+      padding: 5px 0px;
+    }
+  }
+
+} 
+
+
+/*  Pange News */
+.block-views-calendar-list{
+	margin: 0px;
+	width: 100%;
+}
+
+.block-views-news{
+  .views-row{
+      width: 100%;
+  }
+}
+
+
+
+
+/* fund-form-node */
+#research-fund-form-node-form{
+  .research-fund-step-nav{
+    max-width: 600px;
+    width: 100%;
+  }
+  .form-text{
+    max-width: 400px;
+    width: 100%;
+    padding: 5px 0;    
+  } 
+
+}

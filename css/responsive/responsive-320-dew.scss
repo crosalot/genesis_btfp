@@ -1,0 +1,104 @@
+.view-download {
+	.views-field-field-file-download {
+		right: 22px;
+	}
+	.download-file-type {
+		width: 50px;
+	}
+	.views-field-title {
+		width: auto;
+		margin-left: 55px;
+		float: none;
+	}
+	.views-field-created {
+		margin-left: 55px;
+		float: none;
+		border: none;
+	}
+	.views-field-count {
+		margin-left: 55px;
+	}
+}
+
+/* Gallery */
+.view-gallery-page {
+	&.block-gallery-list {
+		.views-field {
+			margin-left: 0;
+		}
+		.views-field-views-ifempty {
+			margin-left: 0;
+			width: 83px;
+			height: 68px;
+			img {
+				width: 83px;
+				height: 68px;
+			}
+		}
+	}
+}
+
+/* Research Fund Landing Page */
+.view-research-fund-sticky {
+	.views-row {
+		.views-field-php a {
+			display: block;
+			text-align: center;
+			margin-bottom: 5px;
+		}
+	}
+}
+
+/* Page User Login */
+#user-login,
+#user-pass {
+	.form-item {
+		.form-text {
+			width: 95%;
+		}
+	}
+}
+
+/* News & Activities */
+#block-views-news-block_2.block-views-news,
+.view-display-id-page_3.block-views-news {
+	.views-row {
+		margin-bottom: 20px;
+	}
+	.views-row-odd {
+		margin-right: 0;
+	}
+	.views-field-field-image {
+		width: 100%;
+		margin-bottom: 10px;
+		float: left;
+
+		img {
+			width: 100%;
+			height: auto;
+			border: 0;
+		}
+	}
+}
+.page-event-list {
+	#block-system-main {
+		.block-views-calendar-list {
+			.views-row {
+				.views-field-field-date-event {
+					margin-bottom: 5px;
+				}
+			}
+		}
+	}
+}
+
+/* Weblink FrontPage */
+#block-views-partners-block {
+	ul {
+	}
+	.jcarousel-skin-default {
+    	.jcarousel-item {
+      		width: 20%;
+    	}
+  	}
+}

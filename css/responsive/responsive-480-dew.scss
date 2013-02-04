@@ -25,15 +25,20 @@
 .view-research-fund-sticky {
 	.views-row {
 		.views-field-field-image {
-			width: 100%;
+			width: 25%;
 			img {
 				width: 100%;
 				height: auto;
 				padding: 0;
 			}
 		}
+    .views-field-php a {
+      display: block;
+      text-align: center;
+      margin-bottom: 5px;
+    }
 		.views-field {
-			margin-left: 0;
+			margin-left: 30%;
 		}
 	}
 }

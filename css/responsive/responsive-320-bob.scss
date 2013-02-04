@@ -66,16 +66,11 @@
   ul{
     li{
       .views-field{
-        margin: 0;
       }
       .views-field-title,.views-field-body{
-        clear: both;
       }
     }
     &.views-row{
-      margin: 0;
-      max-width: 410px;
-      width: 100%;
     }
   }
 }

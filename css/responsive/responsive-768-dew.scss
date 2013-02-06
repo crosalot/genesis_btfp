@@ -55,12 +55,10 @@
 	width: 100%;
 }
 
-#content {
+.section-about .node-content {
 	img {
-		&.budget-img,
-		&.structure-img {
-			width: 100% !important;
-		}
+		width: 100% !important;
+		height: auto;
 	} 
 }
 
@@ -259,5 +257,19 @@
 		.views-row {
 			width: 100%;
 		}
+	}
+}
+
+/* Search popup */
+#search-block-form .form-actions { 
+	display: block;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.block-search {
+	.form-submit{
+		display: visible;
+		top: 13px;
+		right: 12px;
 	}
 }

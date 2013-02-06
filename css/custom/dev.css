@@ -255,3 +255,8 @@ color:#fff;
 .clear{
   clear: both;
 }
+
+
+.view-solr-search .group-left {
+  width: 100% !important;
+}
